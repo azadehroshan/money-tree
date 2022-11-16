@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="moneytree.css">
+    <title>Moneytree</title>
 </head>
 <body>
+    <div class="rangeScore">
+        <span id="rangeValue">0</span>
+        <Input class="range" type="range" value="0" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+    </div>
+    <div class="btnscan">
+        
+        <button class="scan"  onclick="addNumber()">scan</button>
+    </div>
+
+    <div class="preloader-scan">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          
+          <div class="diode">
+            <div class="laser"></div>
+          </div>
+        </ul>
+        
+    </div>
+
     
+    <script type="text/javascript"></script>
+    <script src="./barcode.js"></script>
 </body>
 </html>
